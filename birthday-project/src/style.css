@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+#greeting {
+  text-align: center;
+  font-size: 13vw;
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 0 0 5px #ff00f2, 0 0 10px #ff00f2, 0 0 20px #ff00f2, 0 0 40px #ff00f2;
+  letter-spacing: 2vw;
+}
+
+#line2 {
+  text-shadow: 0 0 5px #cf0b5d, 0 0 10px #cf0b5d, 0 0 20px #cf0b5d, 0 0 40px #cf0b5d;
+}
+
+#nextPageButton:hover {
+  background-color: #cf0b5d;
+  box-shadow: 0 0 10px #cf0b5d, 0 0 20px #cf0b5d;
+}
+
+#nextPageButton {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #ff00f2, #cf0b5d);
+  box-shadow: 0 0 10px #cf0b5d, 0 0 20px #cf0b5d, 0 0 40px #cf0b5d;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  font-family: 'Roboto Mono', Monaco, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#nextPageButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+}
+
+#nextPageButton:hover {
+  box-shadow: 0 0 20px #ff00f2, 0 0 40px #ff00f2, 0 0 80px #ff00f2;
+  transform: scale(1.1);
+}
+
+#nextPageButton:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#nextPageButton:active {
+  transform: scale(0.95);
+}
