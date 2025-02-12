@@ -22,6 +22,13 @@ function handleCandleSuccess() {
 
     // Показываем поздравление
     message.style.display = 'block';
+
+    const headers = document.querySelectorAll('.message h1');
+
+    // Добавляем класс с анимацией к каждому заголовку
+    headers.forEach(header => {
+        header.classList.add('animate');
+    });
 }
 
 // Начало перетаскивания (для десктопов)

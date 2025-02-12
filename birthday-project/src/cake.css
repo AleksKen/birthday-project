@@ -75,11 +75,14 @@ body {
 .message h1 {
     display: block;
     opacity: 0; /* Начальная прозрачность */
+}
+
+.message h1.animate {
     animation: fadeIn 2s ease-in-out forwards; /* Анимация */
 }
 
 /* Задержка для второго заголовка */
-.message h1:nth-child(2) {
+.message h1:nth-child(2).animate {
     animation-delay: 1s;
 }
 
