@@ -29,9 +29,8 @@ body {
 }
 
 #nextPageButton {
-  margin-top: 20px;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  margin-top: 60px;
+  padding: 10px 20px;
   cursor: pointer;
   color: black;
   border: none;
