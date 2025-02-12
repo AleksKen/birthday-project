@@ -3,6 +3,7 @@ const candleLit = document.getElementById('candle-lit');
 const target = document.getElementById('candle-target');
 const message = document.getElementById('bottom-message');
 const birthdayMusic = document.getElementById('birthday-music');
+const arrow = document.getElementById('arrow');
 
 // Переменные для отслеживания состояния перетаскивания
 let isDragging = false;
@@ -13,6 +14,9 @@ function handleCandleSuccess() {
 
     // Скрываем оригинальную свечу
     candle.style.visibility = 'hidden';
+
+    // Скрываем стрелку
+    arrow.style.visibility = 'hidden';
 
     // Убираем черную область
     target.style.visibility = 'hidden';
