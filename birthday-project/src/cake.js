@@ -77,7 +77,7 @@ document.addEventListener('touchend', (e) => {
             candleRect.left >= targetRect.left &&
             candleRect.right <= targetRect.right &&
             candleRect.top >= targetRect.top &&
-            candleRect.bottom <= targetRect.bottom
+            candleRect.bottom <= targetRect.bottom * 3
         ) {
             handleCandleSuccess();
         }
