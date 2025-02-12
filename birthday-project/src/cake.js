@@ -12,16 +12,16 @@ function handleCandleSuccess() {
     birthdayMusic.play();
 
     // Скрываем оригинальную свечу
-    candle.style.display = 'none';
+    candle.style.visibility = 'hidden';
 
     // Убираем черную область
-    target.style.display = 'none';
+    target.style.visibility = 'hidden';
 
     // Зажигаем свечу
     candleLit.style.display = 'flex';
 
     // Показываем поздравление
-    message.style.display = 'flex';
+    message.style.display = 'block';
 }
 
 // Начало перетаскивания (для десктопов)
