@@ -4,6 +4,7 @@ const target = document.getElementById('candle-target');
 const message = document.getElementById('bottom-message');
 const birthdayMusic = document.getElementById('birthday-music');
 const arrow = document.getElementById('arrow');
+const blow = document.getElementById('blow');
 
 // Переменные для отслеживания состояния перетаскивания
 let isDragging = false;
@@ -23,6 +24,9 @@ function handleCandleSuccess() {
 
     // Зажигаем свечу
     candleLit.style.display = 'flex';
+
+    //Рисуем стрелку
+    blow.style.display = 'block';
 
     // Показываем поздравление
     message.style.display = 'block';
