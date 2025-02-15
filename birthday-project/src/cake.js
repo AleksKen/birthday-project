@@ -98,3 +98,9 @@ target.addEventListener('drop', (e) => {
 
     handleCandleSuccess();
 });
+
+// Добавляем обработчик события click
+candleLit.addEventListener('click', function() {
+    // Переход на страницу flowers.html
+    window.location.href = 'flowers.html';
+});
